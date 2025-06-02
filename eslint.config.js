@@ -14,6 +14,11 @@ module.exports = tseslint.config(
     ],
     processor: angular.processInlineTemplates,
     rules: {
+      'comma-dangle': ['error', 'always-multiline'],
+      'eqeqeq': ['error', 'always', { 'null': 'ignore' }],
+      'quotes': ['error', 'single', { avoidEscape: true }],
+      'semi': ['error', 'never'],
+      'no-shadow': 'error',
       "@angular-eslint/directive-selector": [
         "error",
         {
